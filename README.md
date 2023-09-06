@@ -1,8 +1,13 @@
-# React + Vite
+# Memory Match Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the well-known Memory Match game. The game allows you to choose the number of card pairs to play with and keeps track of your statistics.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Select the Number of Card Pairs**: You can choose the number of card pairs you want to play with. The game randomly arranges these pairs on the board for each game.
+
+- **Matching and Guessing**: The game starts after selecting the number of card pairs. You will need to find all the card pairs by correctly matching them. Match all the pairs to win the game.
+
+- **Statistics**: Game statistics are stored in local storage, allowing you to track your wins and losses.
+
+
