@@ -1,0 +1,25 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  @media (max-width: 400px) {
+    padding: 1rem;
+  }
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(131,58,180);
+  background: linear-gradient(333deg, rgba(131,58,180,1) 0%, rgba(136,29,253,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}

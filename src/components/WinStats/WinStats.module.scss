@@ -1,0 +1,33 @@
+.winStats{
+    position: absolute;
+    background-color: rgba(46, 37, 37);
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    &__info{
+      font-size: 0px;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: left;
+      visibility: hidden;
+    }
+    &.active{
+      visibility: visible;
+      transition: 1s;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      min-height: 320px;
+      height: auto;
+      .winStats__info{
+        transition-delay: 1s;
+        transition-duration: .3s;
+        transition-property: font-size visibility;
+        font-size: 20px;
+        visibility: visible;
+      }
+    }
+  }

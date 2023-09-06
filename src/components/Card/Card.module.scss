@@ -1,0 +1,55 @@
+.card{
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+  
+    &__inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      transition: transform .3s;
+      transform-style: preserve-3d;
+      background-color: rgba(46, 37, 37, 0.87);
+      padding: 10px;
+  
+      border-radius: 10px;
+      transform: rotateY(180deg);
+      @include adaptive-value(height,64,20);
+      @include adaptive-value(width,64,20);
+      @media (max-width: 600px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__front,&__back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    &__front{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        @include adaptive-value(height,64,20);
+        @include adaptive-value(width,64,20);
+        @media (max-width: 600px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    &__back{
+      background-color: rgba(46, 37, 37);
+      transform: rotateY(180deg);
+      border-radius: 10px;
+    }
+    &.active{
+      .card__inner{
+        transform: rotateY(360deg);
+      }
+    }
+  }

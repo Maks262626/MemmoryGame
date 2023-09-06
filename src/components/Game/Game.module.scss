@@ -1,0 +1,43 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    @include adaptive-value(gap,20,5);
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(4,1fr);
+      place-items: center;
+    }
+  }
+  
+  .game{
+    margin-bottom: 30px;
+    &__title{
+      font-size: 30px;
+      @media (max-width: 660px) {
+        font-size: 20px;
+      }
+    }
+    &__header{
+      background-color: rgb(71, 51, 85);
+      padding: 20px;
+    }
+    &__field{
+      position: relative;
+      transition: .3s;
+      padding: 20px;
+      background: linear-gradient(123deg, rgba(131,58,180,1) 0%, rgba(136,29,253,1) 50%, rgba(252,176,69,1) 100%);
+    }
+   
+    &__start{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 660px) {
+        flex-direction: column;
+      }
+    }
+  }
+  
+  
+  
+  
