@@ -35,7 +35,7 @@ const Card = ({ card }) => {
         <div className={`${s.card} ${card.opened && s.active}`} onClick={() => handleClick(card)}>
             <div className={s.card__inner}>
                 <div className={s.card__front}>
-                    <img src={`src/assets/icons/${card.cardId}.svg`} alt="icon" />
+                    <img src={`/icons/${card.cardId}.svg`} alt="icon" />
                 </div>
                 <div className={s.card__back}></div>
             </div>
